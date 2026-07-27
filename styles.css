@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "SylexiadSansMedium";
+  src:
+    url("assets/fonts/Sylexiad/Sylexiad Sans Medium/TrueType ttf/SylexiadSansMedium.ttf")
+      format("opentype"),
+    url("assets/fonts/Sylexiad/Sylexiad Sans Medium/TrueType ttf/SylexiadSansMedium.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SylexiadSansMedium-Italic";
+  src:
+    url("assets/fonts/Sylexiad/Sylexiad Sans Medium/TrueType ttf/SylexiadSansMedium-Italic.ttf")
+      format("opentype"),
+    url("assets/fonts/Sylexiad/Sylexiad Sans Medium/TrueType ttf/SylexiadSansMedium-Italic.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SylexiadSansMedium-Bold";
+  src:
+    url("assets/fonts/Sylexiad/Sylexiad Sans Medium/TrueType ttf/SylexiadSansMedium-Bold.ttf")
+      format("opentype"),
+    url("assets/fonts/Sylexiad/Sylexiad Sans Medium/TrueType ttf/SylexiadSansMedium-Bold.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SylexiadSansMedium-BItalic";
+  src:
+    url("assets/fonts/Sylexiad/Sylexiad Sans Medium/TrueType ttf/SylexiadSansMedium-BItalic.ttf")
+      format("opentype"),
+    url("assets/fonts/Sylexiad/Sylexiad Sans Medium/TrueType ttf/SylexiadSansMedium-BItalic.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-light";
+  src: url("assets/fonts/Inter/static/Inter-Light.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: "Inter", Helvetica, sans-serif;
+  background: #f9f6f1;
+  color: #163144;
+  margin: 0;
+}
+main {
+  max-width: 90vw;
+  margin: 0 auto;
+  /* padding: 30px 40px 60px; */
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+  margin-bottom: 20px;
+  /* margin: 20px 40px 10px; */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "SylexiadSansMedium-Bold", Helvetica, sans-serif;
+}
+
+.hero {
+  margin: 10px auto;
+  margin-bottom: 50px;
+  padding: 10px 40px;
+}
+.version {
+  color: #7a7a7a;
+  font-size: 0.9rem;
+}
+
+.available-activities {
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 10px 40px;
+}
+
+.activity-card {
+  display: block;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-top: 30px;
+
+  text-decoration: none;
+  color: inherit;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.activity-button {
+  font-family: "SylexiadSansMedium-Bold";
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.activity-button:hover {
+  background: #005fa3;
+}
+
+.beta-notice {
+  padding: 40px;
+}
