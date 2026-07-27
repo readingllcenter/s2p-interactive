@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vowel Pop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg" />
+  </head>
+
+  <body>
+    <main class="vowel-pop-app">
+      <header class="vp-header">
+        <div>
+          <div id="confetti-container"></div>
+          <h1>
+            Vowel Pop
+            <img
+              src="assets/images/poppi-stand.png"
+              alt="Poppi the vowel popper"
+              class="poppi-icon"
+            />
+          </h1>
+          <p>
+            Drag each vowel tile into the correct space. Tap a tile to hear its
+            name or sound.
+          </p>
+        </div>
+
+        <div class="vp-actions">
+          <button id="shuffleBtn" type="button">Shuffle Tiles</button>
+          <button id="resetBtn" type="button">Reset</button>
+        </div>
+      </header>
+
+      <section class="vp-layout">
+        <section class="chart-panel">
+          <div class="chart-stage" id="chartStage">
+            <img
+              src="assets/images/vc-chart.svg"
+              alt="Blank vowel chart"
+              class="chart-image"
+              draggable="false"
+            />
+            <div id="zonesLayer" class="zones-layer"></div>
+          </div>
+        </section>
+
+        <aside class="tile-tray">
+          <h2>Vowel Tiles</h2>
+          <p>Tiles shuffle each time. Correct answers pop and sparkle.</p>
+          <div id="tiles" class="tiles-grid"></div>
+        </aside>
+      </section>
+    </main>
+
+    <div id="toast" class="toast"></div>
+
+    <div
+      id="celebration-overlay"
+      class="celebration-overlay"
+      style="display: none"
+    >
+      <div id="overlayBackdrop" class="overlay-backdrop"></div>
+      <div class="celebration-content">
+        <h2>Congratulations!</h2>
+        <p>You placed all the vowels correctly!</p>
+        <img
+          id="poppi-celebration"
+          src="assets/images/poppi-jump-1.png"
+          alt="Poppi celebrating"
+        />
+        <div class="celebration-button-section">
+          <button id="playAgainBtn" type="button">Play Again</button>
+          <button id="closeBtn" type="button">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
